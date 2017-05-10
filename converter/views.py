@@ -15,6 +15,14 @@ def services(request):
 def contact(request):
     return render(request, 'converter/contact.html')
 
+def lost(request):
+    return render(request, 'converter/lost.html')
+
+def faq(request):
+    return render(request, 'converter/faq.html')
+
+def donate(request):
+    return render(request, 'converter/donate.html')
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

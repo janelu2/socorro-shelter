@@ -1,0 +1,131 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Socorro Animal Shelter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="/index">City of Socorro Animal Shelter</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Adoption Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Lost and Found Pets</h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item active">FAQ</li>
+        </ol>
+
+        <img src="https://www.bunkerhilltx.gov/images/lost-found-pets/Lost_and_Found_Pets.jpg">
+        <br><br>
+        <h3>If you lost your pet, please do this immediately:</h3>
+        <p>
+                <ul>
+                    <li>File a lost report with our shelter immediately</li>
+                    <li>Post a photo and description of your pet on the Socorro Facebook page</li>
+                    <li>Ask your neighbors and put up posters around the neighborhood</li>
+                    <li>Put up a "Lost Pet" ad in The Chieftain and Craigslist</li>
+                </ul>
+        </p>
+        <br>
+        <h4>How to search for your lost pet SAFELY:</h4>
+        <p>
+                <ul>
+                    <li>Play an active role in finding your lost pet</li>
+                    <li>Start a foot search <b>immediately</b>! The sooner you start searching, the less distance your pet will have traveled. Thoroughly search the surrounding property and continue in the direction that your pet was last seen heading. Go door to door, starting close by initially, moving further out later. Talk to everyone you meet and leave a flyer.</li>
+                    <li>Carry a flashlight and check EVERYWHERE: in closets and all accessible spaces inside your home; behind washers, inside culverts, in heavy brush, sheds, basement crawl spaces, open garages, under decks. Your pet may be stuck somewhere, extremely frightened, or injured and lying low. For lost cats and other climbing critters, check trees, roofs, and attics.</li>
+                    <li>Leave out food and water, as well as belongings with a familiar scent.</li>
+                    <li>Go out at night when the streets are quiet, call for your pet, and then listen for any response. Many animals forage for food between 1:00 – 5:00 a.m. because they feel safer in the dark. The more timid your pet is, the quieter and more slowly you should walk. Bring food and make a noise that would motivate your pet to come running towards you (tapping on a can or rustling a kibble bag). Keep your safety in mind as well.</li>
+                    <li>Leave a message on your answering machine asking for the date, time, and location when the caller may have last seen your missing pet, as well as the caller’s name and phone number in case you have questions.</li>
+                    <li>Post color flyers at local veterinary offices, pet stores, pet groomers, Laundromats, and community bulletin boards. A good place to post flyers is on the New Mexico Tech campus. Make black and white versions of the flyers and leave one at each nearby house.</li>
+                    <li>Talk to everyone you meet. Show them the poster and ask if they have seen your pet — particularly neighbors who leave food out for animals, walkers and joggers, children, newspaper carriers, mail and package delivery people.</li>
+                </ul>
+        </p>
+        <br>
+        <h4>If you <b>found</b> a pet, please immediately:</h4>
+        <p>
+                <ul>
+                    <li>Report the found animal to our shelter</li>
+                    <li>If the animal is wearing a tag, call the number and leave a message</li>
+                    <li>Bring the animal to the vet to scan for a microchip</li>
+                    <li>Put up a "Found Pet" posters</li>
+                    <li>Post the found animal on the Socorro Facebook group</li>
+                </ul>
+                <b>Don’t forget that a lost dog could be scared. If you’re unsure about their behaviour, please don’t approach and wait for the dog warden to arrive.</b>
+        </p><br>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-inverse">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Jane Lu 2017</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/tether/tether.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,16 +10,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Socorro Animal Shelter</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -35,58 +38,23 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand" href="/index">City of Socorro Animal Shelter</a>
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="/services">Adoption Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Portfolio
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                            <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                            <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                            <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Other Pages
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                            <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                            <a class="dropdown-item" href="faq.html">FAQ</a>
-                            <a class="dropdown-item" href="404.html">404</a>
-                            <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-                        </div>
+                        <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -97,54 +65,130 @@
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">FAQ <small>Subheading</small></h1>
+        <h1 class="mt-4 mb-3">Adoption FAQs </h1>
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
             </li>
             <li class="breadcrumb-item active">FAQ</li>
         </ol>
+
+        <img src="http://animalcare.lacounty.gov/wps/wcm/connect/df01b0f8-e3df-4a75-9e67-98daafee6474/Promo.jpg?MOD=AJPERES&CACHEID=df01b0f8-e3df-4a75-9e67-98daafee6474">
 
         <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="card">
                 <div class="card-header" role="tab" id="headingOne">
                     <h5 class="mb-0">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Where do the pets come from?</a>
                     </h5>
                 </div>
 
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                     <div class="card-block">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        We receive animals from individuals who are no longer able to care for their pets, pets that are lost or abandoned and some pets come from other shelters that lack placement resources in their area.
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header" role="tab" id="headingTwo">
                     <h5 class="mb-0">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How do I meet a pet I’m interested in adopting?
                         </a>
                     </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-block">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        You are welcome to visit the shelter anytime during adoption business hours to meet a pet you’re interested in adopting. Once at the shelter, staff and volunteers are available to assist you. You will be allowed to walk any of our dogs outside or play with the cats outside of their cages in closed rooms. All household/family members should interact with the pet before the adoption is finalized to ensure the pet is compatible with everyone.
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header" role="tab" id="headingThree">
                     <h5 class="mb-0">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</a>
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Why is there an adoption fee?</a>
                     </h5>
                 </div>
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="card-block">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        The Socorro Animal Shelter is NOT a for-profit organization. We do not profit off of any animals we shelter. Adoption fees help cover the medical care of the animal while he or she waits for a new home, as well as food and transportation costs. These fees help to provide care for the other animals in the shelter or rescue group who may have medical bills that are much higher than any possible adoption fee. The money also acts as a donation to help support the organization as a whole, allowing the group to continue its efforts to rescue and rehome pets. 
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="q4">
+                    <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#cq4" aria-expanded="false" aria-controls="collapseThree">Aren’t all your animals just unwanted pets?
+</a>
+                    </h5>
+                </div>
+                <div id="cq4" class="collapse" role="tabpanel" aria-labelledby="q4">
+                    <div class="card-block">
+                        Some of our animals are puppies and kittens that will be starting their lives as companions. Older dogs and cats may have had previous owners, and you may have to re-educate these animals to some degree. However, they may have already be familiar with living in a home and have been exposed to house-breaking, litter boxes and obedience training. Remember, too, that companion animals are remarkably adaptable. They have lots of love to give and they really seem to appreciate their new homes. Just because they lived with someone else first, doesn’t mean they won’t make a wonderful companion for you.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="q5">
+                    <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#cq5" aria-expanded="false" aria-controls="collapseThree">What are your requirements for adopting a pet?</a>
+                    </h5>
+                </div>
+                <div id="cq5" class="collapse" role="tabpanel" aria-labelledby="q5">
+                    <div class="card-block">
+                            Adopters must be at least 21 years of age and have identificationl. Adopters must also bring a carrier for cats or purchase a temporary cardboard carrier. 
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" role="tab" id="q6">
+                    <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#cq6" aria-expanded="false" aria-controls="collapseThree">Why choose adoption?</a>
+                    </h5>
+                </div>
+                <div id="cq6" class="collapse" role="tabpanel" aria-labelledby="q6">
+                    <div class="card-block">
+                        <ol>
+                           <li>
+                               <b>You save a life</b><br>All animals at our shelter are in need of a second chance. They have been lost, given up or abandoned. They are all unwanted and helpless. You are giving them a new life in a loving home.
+                           </li> 
+                           <li>
+                               <b>You help break the cycle of pet overpopulation</b><br>There are not enough homes for all the animals that are born every year. Adopting from a shelter helps weaken the pet overpopulation cycle. Each year 8 to 12 million dogs, cats, puppies and kittens are euthanized because there are simply not enough homes for them.
+
+                           </li> 
+                           <li>
+                               <b>You help stop cruelty in mass breeding facilities</b><br>Throughout the country, thousands of commercial pet-breeding facilities and backyard breeders produce millions of animals for sale in pet stores and through newspaper ads. Often known as puppy and kitten mills, these facilities repeatedly impregnate female dogs that spend their entire lives in cages without human companionship. These unfortunate animals are often in intolerable environments, forced to produce litter upon litter, and are destroyed after they become unprofitable assets. Adopting a shelter animal means you don’t support such cruel practices.
+
+                           </li> 
+                           <li>
+                               <b>You take advantage of adopting an adult animal</b><br>Adult pets are great! Often they are already housetrained and some can even “sit” or “stay.” You won’t have to deal with the “puppy faze” or the “kitten faze” which means less of that youthful energy such as biting, chewing, clawing, etc. You will be able to see the personality of the adult animal and won’t have to wait to see what you get.
+
+                           </li> 
+                           <li>
+                               <b>You get a lifetime resource with shelter employees and volunteers.</b><br>People who work at the shelter will be a great resource to help you find information or resources for your pet. Our staff members work with animals every day and have a wealth of information on many different issues.
+                           </li> 
+                           <li>
+                               <b>You choose from a great selection of animals</b><br>Our shelter offers a variety that you won’t find anywhere else. We have specific breeds and also the greatest mutts you’ll ever find. We have more than 9,000 animals come through our doors every year!
+
+                           </li> 
+                           <li>
+                               <b>You adopt a pet who has received good care</b><br>All animals that come to the shelter are admitted by experienced staff. They are given vaccinations upon arrival and go through a behavior screening process. (Please ask your Adoption Counselor for details). We have several vet partners that come to our shelter weekly and are there to assist us with health care issues and concerns.
+                           </li> 
+                           <li>
+                               <b>You support a valuable charity and community institution</b><br>Sadly, every community in America requires an animal shelter. When you adopt a pet from our shelter, you assist a not-for-profit organization, but also send a message to others who will be asking you for years to come where you obtained your adorable pet. Shelters improve the community by mandating that adopted animals be spayed or neutered. This requirement diminishes chances that more unwanted animals will enter the world.
+                           </li> 
+                           <li>
+                               <b>You pay less</b><br>Low adoption fees (which cover a portion of our shelter’s costs) are much less than the cost of purebred puppies or kittens sold for profit.
+                           </li> 
+                           <li>
+                               <b>You encourage others to adopt animals from shelters</b><br>When your friends ask where you got your amazing pet, you can tell them “at the shelter.” Your adoption may encourage others to do the same.
+                           </li> 
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -159,10 +203,9 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/tether/tether.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 </body>
 
 </html>
